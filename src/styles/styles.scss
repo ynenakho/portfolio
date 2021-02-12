@@ -1,0 +1,20 @@
+$darkblue: #005183;
+$lightblue: #009eff;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@import './header';
+@import './about';
+@import './projects';
+@import './section';
+@import './title';
+@import './icon';
+
+.main {
+  min-width: none;
+}

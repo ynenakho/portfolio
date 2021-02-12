@@ -1,0 +1,38 @@
+.black {
+  background: black;
+  p {
+    color: white;
+    font-size: 1.3rem;
+  }
+}
+
+.black-gradient {
+  background-image: linear-gradient($darkblue, black);
+}
+
+.blue-gradient {
+  background-image: linear-gradient(black, $darkblue);
+}
+
+.blue {
+  background: $darkblue;
+}
+
+.black {
+  background: black;
+}
+
+@mixin section {
+  text-align: center;
+  padding: 25px 15px 30px;
+  h2 {
+    color: white;
+  }
+  h1 {
+    color: white;
+  }
+}
+
+.section {
+  @include section;
+}

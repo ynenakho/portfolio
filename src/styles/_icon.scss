@@ -1,0 +1,64 @@
+$size: 12px;
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}
+
+.cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: $size $size 0;
+}
+
+.cubespinner div {
+  position: absolute;
+  width: 2 * $size;
+  height: 2 * $size;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+  line-height: 2 * $size;
+  text-align: center;
+  font-size: 30px; // 100
+  color: black;
+}
+
+.cubespinner .face1 {
+  transform: translateZ($size);
+}
+.cubespinner .face2 {
+  transform: rotateY(90deg) translateZ($size);
+}
+.cubespinner .face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ($size);
+}
+.cubespinner .face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ($size);
+}
+.cubespinner .face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ($size);
+}
+.cubespinner .face6 {
+  transform: rotateX(-90deg) translateZ($size);
+}
