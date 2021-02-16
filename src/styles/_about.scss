@@ -1,3 +1,36 @@
 .about {
-  height: 500px;
+  // height: 500px;
+  @include flexCenter(column);
+  p {
+    font-family: 'avenir';
+    .bluebold {
+      color: $lightblue;
+      font-weight: bold;
+    }
+  }
+}
+
+// .avatar-container {
+//   border-radius: 50%;
+//   border: 10px solid $darkblue;
+// }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  @media only screen and (min-width: $mobile) {
+    width: 250px;
+    height: 250px;
+  }
+  @media only screen and (min-width: $tablet) {
+    width: 300px;
+    height: 300px;
+  }
+  @media only screen and (min-width: $desktop) {
+    width: 400px;
+    height: 400px;
+  }
+
+  border-radius: 50%;
+  border: 20px solid $darkblue;
 }

@@ -1,7 +1,7 @@
 const Projects: React.FC = () => {
   return (
     <div className="section projects blue-gradient">
-      <div>Projects</div>
+      <h2>Projects</h2>
     </div>
   );
 };

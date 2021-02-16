@@ -1,7 +1,11 @@
-const Title: React.FC = () => {
+interface Props {
+  text: string;
+}
+
+const Title: React.FC<Props> = ({ text }) => {
   return (
-    <div className="title section black-gradient">
-      <h1>HI, I'M YURIY AND I'M A SOFTWARE ENGINEER</h1>
+    <div className="section black-gradient title">
+      <h1>{text}</h1>
     </div>
   );
 };

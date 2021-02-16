@@ -24,13 +24,7 @@
 
 @mixin section {
   text-align: center;
-  padding: 25px 15px 30px;
-  h2 {
-    color: white;
-  }
-  h1 {
-    color: white;
-  }
+  padding: 4 * $sizing 2 * $sizing;
 }
 
 .section {
