@@ -1,0 +1,6 @@
+.school-container {
+  @include flexCenter(column);
+  padding: 2 * $sizing;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+}

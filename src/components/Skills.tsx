@@ -12,17 +12,46 @@ const Skills: React.FC = () => {
     'TypeScript',
     'React',
     'Redux',
+    'Next',
     'HTML',
     'CSS',
     'Sass',
     'Material UI',
     'Socket.io',
   ];
+
+  const backEndSkills: string[] = [
+    'Node',
+    'Express',
+    'Passport',
+    'PostgreSQL',
+    'MongoDB',
+    'C/C++',
+    'Python',
+  ];
+
+  const otherSkills: string[] = [
+    'Git',
+    'Github',
+    'Heroku',
+    'AWS S3',
+    'AWS API',
+    'Postman',
+  ];
+
   return (
     <div className="skills section blue">
       <h2>Skills</h2>
-      <h3>Front End</h3>
+      <h3>FrontEnd</h3>
       {frontEndSkills.map((skill) => (
+        <Skill skill={skill} />
+      ))}
+      <h3>BackEnd</h3>
+      {backEndSkills.map((skill) => (
+        <Skill skill={skill} />
+      ))}
+      <h3>Other</h3>
+      {otherSkills.map((skill) => (
         <Skill skill={skill} />
       ))}
     </div>

@@ -26,6 +26,7 @@ $desktop: 1280px;
 @import './section';
 @import './icon';
 @import './skills';
+@import './education';
 
 // .main {
 // padding: 16px;
@@ -34,6 +35,10 @@ $desktop: 1280px;
 body {
   color: white;
   font-family: 'Ubuntu', serif;
+}
+
+p {
+  margin: 0;
 }
 
 h2 {
