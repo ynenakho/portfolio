@@ -1,0 +1,53 @@
+.connect {
+  background: $grey;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  img {
+    margin: $sizing;
+    width: 50px;
+
+    &:hover {
+      @keyframes shake {
+        0% {
+          transform: translateY(-10%);
+        }
+        10% {
+          transform: translateY(10%);
+        }
+        20% {
+          transform: translateY(-9%);
+        }
+        30% {
+          transform: translateY(8%);
+        }
+        40% {
+          transform: translateY(-7%);
+        }
+        50% {
+          transform: translateY(6%);
+        }
+        60% {
+          transform: translateY(-5%);
+        }
+        70% {
+          transform: translateY(4%);
+        }
+        80% {
+          transform: translateY(-3%);
+        }
+        90% {
+          transform: translateY(2%);
+        }
+        100% {
+          transform: translateY(-1%);
+        }
+      }
+
+      animation: shake 1s ease-in;
+      cursor: pointer;
+    }
+  }
+}

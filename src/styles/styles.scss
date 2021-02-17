@@ -1,5 +1,6 @@
 $darkblue: #005183;
 $lightblue: #009eff;
+$grey: #424242;
 
 $sizing: 8px;
 $mobile: 600px;
@@ -27,6 +28,7 @@ $desktop: 1280px;
 @import './icon';
 @import './skills';
 @import './education';
+@import './connect';
 
 // .main {
 // padding: 16px;

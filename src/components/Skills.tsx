@@ -35,8 +35,8 @@ const Skills: React.FC = () => {
     'Github',
     'Heroku',
     'AWS S3',
-    'AWS API',
     'Postman',
+    'OOP',
   ];
 
   return (
