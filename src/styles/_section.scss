@@ -27,6 +27,11 @@
   padding: 4 * $sizing 2 * $sizing;
 }
 
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .section {
   @include section;
 }

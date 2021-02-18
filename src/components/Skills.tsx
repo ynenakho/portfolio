@@ -41,19 +41,21 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills section blue">
-      <h2>Skills</h2>
-      <h3>FrontEnd</h3>
-      {frontEndSkills.map((skill) => (
-        <Skill skill={skill} />
-      ))}
-      <h3>BackEnd</h3>
-      {backEndSkills.map((skill) => (
-        <Skill skill={skill} />
-      ))}
-      <h3>Other</h3>
-      {otherSkills.map((skill) => (
-        <Skill skill={skill} />
-      ))}
+      <div className="container">
+        <h2>Skills</h2>
+        <h3>FrontEnd</h3>
+        {frontEndSkills.map((skill) => (
+          <Skill skill={skill} />
+        ))}
+        <h3>BackEnd</h3>
+        {backEndSkills.map((skill) => (
+          <Skill skill={skill} />
+        ))}
+        <h3>Other</h3>
+        {otherSkills.map((skill) => (
+          <Skill skill={skill} />
+        ))}
+      </div>
     </div>
   );
 };

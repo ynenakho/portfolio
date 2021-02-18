@@ -51,10 +51,14 @@ const Education: React.FC = () => {
   ];
   return (
     <div className="education section black-gradient">
-      <h2>Education</h2>
-      {schools.map(({ course, school, website }) => (
-        <School course={course} school={school} website={website} />
-      ))}
+      <div className="container">
+        <h2>Education</h2>
+        <div className="flex">
+          {schools.map(({ course, school, website }) => (
+            <School course={course} school={school} website={website} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

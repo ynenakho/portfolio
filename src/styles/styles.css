@@ -124,6 +124,11 @@
   background: black;
 }
 
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .section {
   text-align: center;
   padding: 32px 16px;
@@ -284,6 +289,12 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   margin: 8px;
+  min-width: 45%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .school-container .course {
@@ -325,6 +336,14 @@
   transition: top ease-out 150ms, -webkit-transform ease-out 150ms;
   transition: transform ease-out 150ms, top ease-out 150ms;
   transition: transform ease-out 150ms, top ease-out 150ms, -webkit-transform ease-out 150ms;
+}
+
+.education .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .connect {
