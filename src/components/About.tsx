@@ -12,10 +12,9 @@ const About: React.FC = () => {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit omnis quod eos deserunt, eveniet, exercitationem
-              itaque debitis vero quas ratione quisquam ipsa! Eius ad minima
-              consectetur quis aliquam soluta? Sapiente.
+              Dynamic Full Stack Developer with 3+ years of software and Web
+              application development experience. Skilled at developing complex
+              solutions and processing strong creative thinking skills.
             </p>
             <p>
               <span className="bluebold">
