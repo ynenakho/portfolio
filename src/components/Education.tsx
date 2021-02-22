@@ -10,11 +10,9 @@ const School: React.FC<SchoolProps> = ({ course, school, website }) => {
   };
 
   return (
-    <div className="school-container">
+    <div className="school-container" onClick={handleClick}>
       <p className="course">{course}</p>
-      <p className="school" data-tool-tip={website} onClick={handleClick}>
-        {school}
-      </p>
+      <p className="school">{school}</p>
     </div>
   );
 };
@@ -50,7 +48,7 @@ const Education: React.FC = () => {
     },
   ];
   return (
-    <div className="education section black-gradient">
+    <div className="education section blue">
       <div className="container">
         <h2>Education</h2>
         <div className="flex">

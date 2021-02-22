@@ -1,3 +1,6 @@
 .projects {
-  height: 500px;
+  .projects-container {
+    height: 300px;
+    @include flexCenter('column');
+  }
 }

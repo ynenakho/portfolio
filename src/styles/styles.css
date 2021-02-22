@@ -57,7 +57,9 @@
 }
 
 .about p {
+  margin: 32px;
   font-family: 'avenir';
+  text-align: left;
 }
 
 .about p .bluebold {
@@ -65,36 +67,87 @@
   font-weight: bold;
 }
 
-.avatar {
+@media (max-width: 960px) {
+  .about p {
+    text-align: center;
+  }
+}
+
+.about .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 960px) {
+  .about .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.avatar-container {
+  margin-right: 80px;
+}
+
+@media (max-width: 960px) {
+  .avatar-container {
+    margin: 0;
+  }
+}
+
+.avatar-container .avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 20px solid #005183;
 }
 
-@media only screen and (min-width: 600px) {
-  .avatar {
+@media (min-width: 600px) {
+  .avatar-container .avatar {
     width: 250px;
     height: 250px;
   }
 }
 
-@media only screen and (min-width: 960px) {
-  .avatar {
+@media (min-width: 960px) {
+  .avatar-container .avatar {
     width: 300px;
     height: 300px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .avatar {
+@media (min-width: 1280px) {
+  .avatar-container .avatar {
     width: 400px;
     height: 400px;
   }
 }
 
-.projects {
-  height: 500px;
+.projects .projects-container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "column";
+          flex-direction: "column";
 }
 
 .black {
@@ -268,7 +321,42 @@
   background: rgba(0, 0, 0, 0.3);
   padding: 8px;
   border-radius: 8px;
-  margin: 8px;
+  margin-bottom: 16px;
+  width: 30%;
+  border-color: #009eff;
+  -webkit-box-shadow: 0 0 40px 40px #009eff inset, 0 0 0 0 #009eff;
+          box-shadow: 0 0 40px 40px #009eff inset, 0 0 0 0 #009eff;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+@media (max-width: 960px) {
+  .skill {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    width: 100%;
+  }
+}
+
+.skill:hover {
+  -webkit-box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
+          box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
+  cursor: pointer;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .school-container {
@@ -288,13 +376,22 @@
   padding: 16px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  margin: 8px;
-  min-width: 45%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin-bottom: 16px;
+  width: 46%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  position: relative;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  -webkit-box-shadow: inset 0 0 0 0 #009eff;
+          box-shadow: inset 0 0 0 0 #009eff;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .school-container {
+    width: 100%;
+  }
 }
 
 .school-container .course {
@@ -306,36 +403,19 @@
 .school-container .school {
   margin-top: 8px;
   color: grey;
-  position: relative;
 }
 
-.school-container .school:hover {
-  color: #009eff;
-  cursor: pointer;
+.school-container:hover {
+  -webkit-box-shadow: inset 0 0 0 100px #009eff;
+          box-shadow: inset 0 0 0 100px #009eff;
 }
 
-.school-container .school:hover::after {
-  -webkit-transform: scale(1) translate(50%, 0);
-          transform: scale(1) translate(50%, 0);
-  top: 100%;
+.school-container:hover .course {
+  color: white;
 }
 
-.school-container .school::after {
-  content: attr(data-tool-tip);
-  display: block;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px;
-  padding: 1em 3em;
-  font-size: 0.8em;
-  -webkit-transform: scale(0) translate(50%, 0);
-          transform: scale(0) translate(50%, 0);
-  top: 0;
-  right: 50%;
-  -webkit-transition: top ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: top ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: transform ease-out 150ms, top ease-out 150ms;
-  transition: transform ease-out 150ms, top ease-out 150ms, -webkit-transform ease-out 150ms;
+.school-container:hover .school {
+  color: white;
 }
 
 .education .flex {
@@ -344,6 +424,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .connect {

@@ -15,9 +15,10 @@ const Main: React.FC<Props> = (props) => {
       <div className="main">
         <Title text="Hi, I'm Yuriy and I'm a software engineer" />
         <About />
-        <Projects />
+
         <Skills />
         <Education />
+        <Projects />
         <Connect />
       </div>
     </div>

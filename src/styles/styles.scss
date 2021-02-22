@@ -16,10 +16,6 @@ $desktop: 1280px;
   flex-direction: $direction;
 }
 
-// @mixin mobile($properties) {
-//   $properties
-// }
-
 @import './header';
 @import './title';
 @import './about';
@@ -29,10 +25,6 @@ $desktop: 1280px;
 @import './skills';
 @import './education';
 @import './connect';
-
-// .main {
-// padding: 16px;
-// }
 
 body {
   color: white;
@@ -51,3 +43,13 @@ h3 {
   text-transform: uppercase;
   color: $lightblue;
 }
+
+// @media only screen and (max-width: $mobile) {
+//   height: 250px;
+// }
+// @media only screen and (max-width: $tablet) {
+//   height: 300px;
+// }
+// @media only screen and (max-width: $desktop) {
+//   height: 400px;
+// }
