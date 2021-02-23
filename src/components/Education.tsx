@@ -10,7 +10,7 @@ const School: React.FC<SchoolProps> = ({ course, school, website }) => {
   };
 
   return (
-    <div className="school-container" onClick={handleClick}>
+    <div className="school-container" data-aos="zoom-in" onClick={handleClick}>
       <p className="course">{course}</p>
       <p className="school">{school}</p>
     </div>
@@ -50,10 +50,15 @@ const Education: React.FC = () => {
   return (
     <div className="education section blue">
       <div className="container">
-        <h2>Education</h2>
+        <h2 data-aos="slide-left">Education</h2>
         <div className="flex">
           {schools.map(({ course, school, website }) => (
-            <School course={course} school={school} website={website} />
+            <School
+              course={course}
+              school={school}
+              website={website}
+              key={course}
+            />
           ))}
         </div>
       </div>

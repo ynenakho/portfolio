@@ -1,3 +1,5 @@
+import Typist from 'react-typist';
+
 interface Props {
   text: string;
 }
@@ -5,7 +7,9 @@ interface Props {
 const Title: React.FC<Props> = ({ text }) => {
   return (
     <div className="section black-gradient title">
-      <h1>{text}</h1>
+      <Typist cursor={{ show: false }}>
+        <h1>{text}</h1>
+      </Typist>
     </div>
   );
 };

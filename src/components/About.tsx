@@ -3,7 +3,7 @@ const About: React.FC = () => {
     <div className="section black about">
       <div className="container">
         <div className="flex">
-          <div className="avatar-container">
+          <div className="avatar-container" data-aos="fade-in">
             <img
               src="/pictures/yuriy-avatar-1.png"
               alt="avatar"

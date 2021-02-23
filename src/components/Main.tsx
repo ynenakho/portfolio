@@ -12,15 +12,12 @@ const Main: React.FC<Props> = (props) => {
   return (
     <div>
       <Header title="Software Engineer" />
-      <div className="main">
-        <Title text="Hi, I'm Yuriy and I'm a software engineer" />
-        <About />
-
-        <Skills />
-        <Education />
-        <Projects />
-        <Connect />
-      </div>
+      <Title text="Hi, My name is Yuriy and I am a software engineer" />
+      <About />
+      <Skills />
+      <Education />
+      <Projects />
+      <Connect />
     </div>
   );
 };

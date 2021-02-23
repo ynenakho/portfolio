@@ -1,8 +1,12 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import Router from 'Router';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div className="App">
       <Router />

@@ -317,7 +317,11 @@
           transform: rotateX(-90deg) translateZ(12px);
 }
 
-.skill {
+.skills {
+  padding-top: 80px;
+}
+
+.skills .skill {
   background: rgba(0, 0, 0, 0.3);
   padding: 8px;
   border-radius: 8px;
@@ -331,24 +335,24 @@
 }
 
 @media (max-width: 960px) {
-  .skill {
+  .skills .skill {
     width: 45%;
   }
 }
 
 @media (max-width: 600px) {
-  .skill {
+  .skills .skill {
     width: 100%;
   }
 }
 
-.skill:hover {
+.skills .skill:hover {
   -webkit-box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
           box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
   cursor: pointer;
 }
 
-.skills-container {
+.skills .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,13 +437,39 @@
   background: #424242;
 }
 
+.connect .connect-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: "row";
+          flex-direction: "row";
+}
+
 .connect h2 {
   margin-top: 0;
+}
+
+.connect a {
+  top: 0;
 }
 
 .connect img {
   margin: 8px;
   width: 50px;
+}
+
+@media (max-width: 600px) {
+  .connect img {
+    width: 40px;
+  }
 }
 
 .connect img:hover {

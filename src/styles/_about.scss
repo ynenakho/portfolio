@@ -1,5 +1,4 @@
 .about {
-  // height: 500px;
   @include flexCenter(column);
   p {
     margin: 4 * $sizing;

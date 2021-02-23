@@ -1,13 +1,24 @@
 .connect {
   background: $grey;
 
+  .connect-container {
+    @include flexCenter('row');
+  }
+
   h2 {
     margin-top: 0;
+  }
+  a {
+    top: 0;
   }
 
   img {
     margin: $sizing;
     width: 50px;
+
+    @media (max-width: $mobile) {
+      width: 40px;
+    }
 
     &:hover {
       @keyframes shake {

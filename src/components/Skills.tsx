@@ -3,7 +3,11 @@ interface SkillProps {
 }
 
 const Skill: React.FC<SkillProps> = ({ skill }) => {
-  return <div className="skill">{skill}</div>;
+  return (
+    <div className="skill" data-aos="flip-left">
+      {skill}
+    </div>
+  );
 };
 
 const Skills: React.FC = () => {
@@ -42,23 +46,23 @@ const Skills: React.FC = () => {
   return (
     <div className="skills section blue-gradient">
       <div className="container">
-        <h2>Skills</h2>
-        <h3>FrontEnd</h3>
+        <h2 data-aos="slide-left">Skills</h2>
+        <h3 data-aos="slide-right">FrontEnd</h3>
         <div className="skills-container">
           {frontEndSkills.map((skill) => (
-            <Skill skill={skill} />
+            <Skill skill={skill} key={skill} />
           ))}
         </div>
-        <h3>BackEnd</h3>
+        <h3 data-aos="slide-left">BackEnd</h3>
         <div className="skills-container">
           {backEndSkills.map((skill) => (
-            <Skill skill={skill} />
+            <Skill skill={skill} key={skill} />
           ))}
         </div>
-        <h3>Other</h3>
+        <h3 data-aos="slide-right">Other</h3>
         <div className="skills-container">
           {otherSkills.map((skill) => (
-            <Skill skill={skill} />
+            <Skill skill={skill} key={skill} />
           ))}
         </div>
       </div>
