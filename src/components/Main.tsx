@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Header from 'components/Header';
 import Connect from './Connect';
 import Education from './Education';
@@ -9,6 +10,10 @@ import Title from './Title';
 interface Props {}
 
 const Main: React.FC<Props> = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
       <Header title="Software Engineer" />

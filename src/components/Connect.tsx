@@ -14,18 +14,18 @@ const Connect: React.FC = () => {
     {
       href: 'tel:9178626512',
       src: 'phone-icon.png',
-      dataAos: 'fade-up-right',
+      dataAos: 'fade-down-right',
     },
     {
       href:
         'https://drive.google.com/file/d/15hsNe4rEQ0wsAkuzhhGiSHIbwH7RM7xV/view?usp=sharing',
       src: 'resume-icon.png',
-      dataAos: 'fade-up',
+      dataAos: 'fade-down',
     },
     {
       href: 'https://github.com/ynenakho',
       src: 'github-icon.png',
-      dataAos: 'fade-up-left',
+      dataAos: 'fade-down-left',
     },
     {
       href: 'https://www.linkedin.com/in/yuriy-nenakhov',
