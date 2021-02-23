@@ -26,6 +26,10 @@ $desktop: 1280px;
 @import './education';
 @import './connect';
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   color: white;
   font-family: 'Ubuntu', serif;

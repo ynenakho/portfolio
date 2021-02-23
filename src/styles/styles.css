@@ -572,6 +572,10 @@
   }
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   color: white;
   font-family: 'Ubuntu', serif;
