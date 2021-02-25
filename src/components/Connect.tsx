@@ -39,8 +39,8 @@ const ConnectLink: React.FC<ConnectLinkProps> = ({ href, src, dataAos }) => {
   const target = href === 'tel:9178626512' ? '' : '_blank';
   const rel = href === 'tel:9178626512' ? '' : 'noreferrer';
 
-  const handleClick = (target: string) => {
-    const name = target.split('-')[0];
+  const handleClick = () => {
+    const name = src.split('-')[0];
     window.analytics.logEvent('clickLink', { name });
   };
 
@@ -54,11 +54,7 @@ const ConnectLink: React.FC<ConnectLinkProps> = ({ href, src, dataAos }) => {
   //   );
   // }
   return (
-    <div
-      data-aos={dataAos}
-      data-aos-offset="50"
-      onClick={() => handleClick(src)}
-    >
+    <div data-aos={dataAos} data-aos-offset="50" onClick={handleClick}>
       <a href={href} target={target} rel={rel}>
         <img src={`/icons/${src}`} alt={src} />
       </a>
