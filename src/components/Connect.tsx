@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface ConnectLinkProps {
   href: string;
   src: string;
@@ -37,6 +39,17 @@ const Connect: React.FC = () => {
   const ConnectLink: React.FC<ConnectLinkProps> = ({ href, src, dataAos }) => {
     const target = href === 'tel:9178626512' ? '' : '_blank';
     const rel = href === 'tel:9178626512' ? '' : 'noreferrer';
+
+    if (src === 'resume-icon.png') {
+      return (
+        <div data-aos={dataAos} data-aos-offset="50">
+          <Link to="/resume">
+            <img src={`/icons/${src}`} alt={src} />
+          </Link>
+        </div>
+      );
+    }
+
     return (
       <div data-aos={dataAos} data-aos-offset="50">
         <a href={href} target={target} rel={rel}>
