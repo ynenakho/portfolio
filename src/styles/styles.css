@@ -62,6 +62,10 @@
   text-align: left;
 }
 
+.about p .scroll-link {
+  cursor: pointer;
+}
+
 .about p .bluebold {
   color: #009eff;
   font-weight: bold;
@@ -95,17 +99,17 @@
   }
 }
 
-.avatar-container {
+.about .avatar-container {
   margin-right: 80px;
 }
 
 @media (max-width: 960px) {
-  .avatar-container {
+  .about .avatar-container {
     margin: 0;
   }
 }
 
-.avatar-container .avatar {
+.about .avatar-container .avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -113,21 +117,21 @@
 }
 
 @media (min-width: 600px) {
-  .avatar-container .avatar {
+  .about .avatar-container .avatar {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (min-width: 960px) {
-  .avatar-container .avatar {
+  .about .avatar-container .avatar {
     width: 300px;
     height: 300px;
   }
 }
 
 @media (min-width: 1280px) {
-  .avatar-container .avatar {
+  .about .avatar-container .avatar {
     width: 400px;
     height: 400px;
   }

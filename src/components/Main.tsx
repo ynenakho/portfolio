@@ -5,9 +5,11 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Title from './Title';
 
-interface Props {}
+interface Props {
+  scrollToContacts: () => void;
+}
 
-const Main: React.FC<Props> = (props) => {
+const Main: React.FC<Props> = ({ scrollToContacts }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -15,7 +17,7 @@ const Main: React.FC<Props> = (props) => {
   return (
     <>
       <Title text="Hi, My name is Yuriy and I am a software engineer" />
-      <About />
+      <About scrollToContacts={scrollToContacts} />
       <Skills />
       <Education />
       <Projects />

@@ -4,6 +4,9 @@
     margin: 4 * $sizing;
     font-family: 'avenir';
     text-align: left;
+    .scroll-link {
+      cursor: pointer;
+    }
     .bluebold {
       color: $lightblue;
       font-weight: bold;
@@ -21,34 +24,30 @@
       flex-direction: column;
     }
   }
-}
 
-// .avatar-container {
-//   border-radius: 50%;
-//   border: 10px solid $darkblue;
-// }
-.avatar-container {
-  margin-right: 10 * $sizing;
-  @media (max-width: $tablet) {
-    margin: 0;
-  }
-  .avatar {
-    width: 200px;
-    height: 200px;
-    @media (min-width: $mobile) {
-      width: 250px;
-      height: 250px;
+  .avatar-container {
+    margin-right: 10 * $sizing;
+    @media (max-width: $tablet) {
+      margin: 0;
     }
-    @media (min-width: $tablet) {
-      width: 300px;
-      height: 300px;
-    }
-    @media (min-width: $desktop) {
-      width: 400px;
-      height: 400px;
-    }
+    .avatar {
+      width: 200px;
+      height: 200px;
+      @media (min-width: $mobile) {
+        width: 250px;
+        height: 250px;
+      }
+      @media (min-width: $tablet) {
+        width: 300px;
+        height: 300px;
+      }
+      @media (min-width: $desktop) {
+        width: 400px;
+        height: 400px;
+      }
 
-    border-radius: 50%;
-    border: 20px solid $darkblue;
+      border-radius: 50%;
+      border: 20px solid $darkblue;
+    }
   }
 }
