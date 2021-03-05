@@ -326,16 +326,11 @@
 }
 
 .skills .skill {
-  background: rgba(0, 0, 0, 0.3);
+  background: #009eff;
   padding: 8px;
   border-radius: 8px;
   margin-bottom: 16px;
   width: 30%;
-  border-color: #009eff;
-  -webkit-box-shadow: 0 0 40px 40px #009eff inset, 0 0 0 0 #009eff;
-          box-shadow: 0 0 40px 40px #009eff inset, 0 0 0 0 #009eff;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
 }
 
 @media (max-width: 960px) {
@@ -348,12 +343,6 @@
   .skills .skill {
     width: 100%;
   }
-}
-
-.skills .skill:hover {
-  -webkit-box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
-          box-shadow: 0 0 10px 0 #009eff inset, 0 0 10px 4px #009eff;
-  cursor: pointer;
 }
 
 .skills .skills-container {
