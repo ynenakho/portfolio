@@ -17,10 +17,10 @@
     box-shadow: 0 0 40px 40px $lightblue inset, 0 0 0 0 $lightblue;
     transition: all 150ms ease-in-out;
 
-    &:hover {
-      box-shadow: 0 0 10px 0 $lightblue inset, 0 0 10px 4px $lightblue;
-      cursor: pointer;
-    }
+    // &:hover {
+    //   box-shadow: 0 0 10px 0 $lightblue inset, 0 0 10px 4px $lightblue;
+    //   cursor: pointer;
+    // }
   }
 
   .skills-container {
