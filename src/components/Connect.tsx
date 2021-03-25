@@ -41,7 +41,7 @@ const ConnectLink: React.FC<ConnectLinkProps> = ({ href, src, dataAos }) => {
 
   const handleClick = () => {
     const name = src.split('-')[0];
-    window.analytics.logEvent('clickLink', { name });
+    window.analytics.logEvent(`click-${name}`, { name });
   };
 
   // if (src === 'resume-icon.png') {

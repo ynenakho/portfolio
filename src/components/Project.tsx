@@ -7,7 +7,7 @@ type Props = {
 
 const Project: React.FC<Props> = ({ name, about, picture, link }) => {
   const handleEvent = () => {
-    window.analytics.logEvent('clickLink', { name });
+    window.analytics.logEvent(`click-${name}`, { name });
   };
 
   return (
