@@ -1,6 +1,50 @@
 .projects {
   .projects-container {
-    height: 300px;
-    @include flexCenter('column');
+    @include flexCenter(row);
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 500px;
+    border-radius: 8px;
+    padding: $sizing;
+    background-color: $lightblue;
+    margin: 2 * $sizing;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin: 2 * $sizing 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+
+    .image-wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    img {
+      transform: scale(1);
+      transition: all 0.3s ease;
+    }
+
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: $sizing;
+    }
+
+    .project-about {
+      margin: $sizing;
+    }
   }
 }

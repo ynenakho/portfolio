@@ -26,6 +26,10 @@ $desktop: 1280px;
 @import './education';
 @import './connect';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   overflow-x: hidden !important;
 }
@@ -48,13 +52,3 @@ h3 {
   text-transform: uppercase;
   color: $lightblue;
 }
-
-// @media only screen and (max-width: $mobile) {
-//   height: 250px;
-// }
-// @media only screen and (max-width: $tablet) {
-//   height: 300px;
-// }
-// @media only screen and (max-width: $desktop) {
-//   height: 400px;
-// }
